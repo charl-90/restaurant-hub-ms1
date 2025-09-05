@@ -14,11 +14,6 @@ It should have the ability for home delivery or pick up bu customers.
 
 
 
-
-
-
-
-
 **Wireframe Desktop**
 ![alt text](signUp.PNG)
 
