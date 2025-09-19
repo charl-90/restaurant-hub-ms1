@@ -1,7 +1,7 @@
 /* Google fonts import */
- 
-@import url('https://fonts.googleapis.com/css2?family= Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900 &family=Oswald:wght@200..700&display=swap');
- 
+
+@import url("https://fonts.googleapis.com/css2?family= Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900 &family=Oswald:wght@200..700&display=swap");
+
 /* Asterisk wildcard selector to override default styles added automatically by the browser */
 
 * {
@@ -20,7 +20,6 @@ body {
   font-family: "Lato", sans-serif;
 }
 
-
 /* Header */
 header {
   background-color: #ffffff;
@@ -29,7 +28,9 @@ header {
   z-index: 99;
   width: 100%;
   box-shadow: 0 2px 2px #3a3a3a;
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
 header a {
@@ -37,47 +38,85 @@ header a {
   color: inherit;
 }
 
-h1{
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #252525;
-
+h1 {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #252525;
 }
 #menu {
   font-size: 110%;
   letter-spacing: 4px;
-    list-style: none;
+  list-style: none;
 }
 #menu li {
   margin-bottom: 1em;
 }
-.active{
-    border-bottom: 1px solid blueviolet;
+.active {
+  border-bottom: 1px solid blueviolet;
+}
+
+/* Navbar style with dropdown toggle */
+nav {
+  position: absolute;
+  background-color: #ffffff;
+  width: 100%;
+  left: 0;
+  padding: 0 1rem;
+  box-shadow: 0 2px 2px #3a3a3a;
+  display: none;
+  top: 100%;
+}
+
+/* Nav toggle*/
+#nav-toggle:checked ~ nav {
+  display: block;
+}
+/* Hide the checkbox */
+#nav-toggle {
+  display: none;
+}
+/* Nav toggle label */
+.nav-toggle-label {
+  font-size: 2rem;
 }
 
 /* Main Content */
 main {
-   background-color: lightblue;
+  background-color: rgb(236, 255, 205);
   /* Make main elemant take up any surplus space to push footer down*/
-    flex: 1 0 auto;
- 
+  flex: 1 0 auto;
+  margin-top: 67px;
 }
 /* Footer */
 footer {
-  background-color: orange;
+  background-color: rgb(87, 0, 128);
   position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   color: #3a3a3a;
-   text-align: left;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: #3a3a3a;
+  text-align: left;
 }
 /* Media query: larger or landscape phones (576px and up) */
-@media screen and (min-width: 576px) {
-  #photos {
-    column-count: 2;
-    column-gap: 0;
+@media screen and (min-width: 768px) {
+  /* Header */
+  nav {
+    display: block;
+    position: relative;
+    box-shadow: none;
+    width: fit-content;
+    padding-right: 1rem;
   }
-  
+
+    #menu {
+        display: flex;
+         
+    }
+    #menu li {
+        padding-left: 1rem;
+    }
+    .nav-toggle-label {
+        display: none;
+    }
 }
