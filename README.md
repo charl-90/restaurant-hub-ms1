@@ -23,3 +23,8 @@ It should have the ability for home delivery or pick up bu customers.
 
 **Wireframe Mobile**
 ![alt text](mobileSignUp.PNG)
+
+
+**Libaries**
+kit.fontawaesome.com
+Google font style

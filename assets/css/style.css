@@ -88,6 +88,11 @@ main {
   flex: 1 0 auto;
   margin-top: 67px;
 }
+
+
+
+
+
 /* Footer */
 footer {
   background-color: rgb(87, 0, 128);
@@ -118,5 +123,22 @@ footer {
     }
     .nav-toggle-label {
         display: none;
+    }
+    #logo {
+        font-size: 280%;
+        line-height: 75px;
+        margin: 0  0.5rem;
+    }
+    /* Main content */
+    main {
+        /* Adjust by pushing main content down to accommodate larger header */
+        margin-top: 97px;
+    }
+    
+}
+/* Media query: Large devices (Laptops and desktops (992px and up) */
+@media screen and (min-width: 992px) {
+    #menu a:hover {
+        border-bottom: 1px solid #3a3a3a;
     }
 }
