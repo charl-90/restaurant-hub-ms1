@@ -26,5 +26,5 @@ It should have the ability for home delivery or pick up bu customers.
 
 
 **Libaries**
-kit.fontawaesome.com
-Google font style
+-kit.fontawaesome.com,
+-Google font style
