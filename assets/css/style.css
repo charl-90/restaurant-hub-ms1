@@ -128,6 +128,16 @@ html{
   width: 100%;
 }
 
+/* Gallery page */
+#photos img {
+  width: 100%;
+  line-height: 1em;
+
+}
+#photos {
+  line-height: 0.01em;
+}
+
 /* Footer */
 #social-networks {
   text-align: center;
@@ -143,9 +153,16 @@ html{
      
 }
 
-
-
 /* Media query: larger or landscape phones (576px and up) */
+@media screen and (min-width: 768px) {
+  #photos {
+    column-count: 2;
+    column-gap: 0;
+  }
+    
+
+
+/* Media query: Tablet and larger (768px and up) */
 @media screen and (min-width: 768px) {
   /* Header */
   nav {
@@ -184,4 +201,5 @@ html{
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
     }
+}
 }
