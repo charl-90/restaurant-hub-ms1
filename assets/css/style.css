@@ -128,7 +128,7 @@ html{
 
 /*--- form ---*/
 form {
-  background-color: #f4f4f4;
+  background: linear-gradient( #f8f8f8, #e8e8e8);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -136,16 +136,49 @@ form {
   padding: 2rem;
   border: 1px solid #ddd;
   border-radius: 5px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 480px;
+  max-width: 90%;
+  border-radius: 5px;
+  text-align: left;
+  padding: 25px 25px 10px 25px ;
+  box-shadow: 0px 5px 20px 10px rgba(0,0,0,0.1);
     
 }
+
+form header {
+  font-size: 30px;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #3a3a3a;
+}
+ .form form i {
+  margin: 40px 0;
+ }
+ form fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+ }
+
+
+form i:hover {
+  color: plum;
+  cursor: pointer;
+}
+
+
+
+
 form div {
-  font-size: 160%;
+  font-size: 165%;
   text-align: center;
   margin-bottom: 1rem;
   color: #3a3a3a;
 }
 form h2 {
-  font-size: 120%;
+  font-size: 80%;
   text-align: center;
   margin-bottom: 1rem;
   color: black;
@@ -155,6 +188,7 @@ form p {
   margin-bottom: 1rem;
   color: #3a3a3a;
 }
+
 form label {
   display: block;
   margin-bottom: 0.5rem;
@@ -205,9 +239,6 @@ form i {
   left: 10px;
 }
 
-
-
-
 /* gallery section */
 #photos {
   width: 100%;
@@ -251,6 +282,23 @@ footer {
   flex-shrink: 0;
 }
 
+/*-- Media query: small screens (max-width:800px) -- */
+@media screen and (max-width: 800px) {
+  form {
+    width: 500px;
+    height: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem;
+    box-sizing: border-box;
+
+          
+
+  }
+ 
+
 /* Media query: larger or landscape phones (576px and up) */
 @media screen and (min-width: 768px) {
   #photos {
@@ -292,6 +340,17 @@ footer {
         /* Adjust by pushing main content down to accommodate larger header */
         margin-top: 97px;
     }
+
+    /*-- Hero --  */
+    #cover-text {
+        width: 300px;
+        right: 50px;
+    }
+
+    /* Gallery */
+    #photos {
+        column-count: 3;
+        column-gap: 0;
     
 }
 /* Media query: Large devices (Laptops and desktops (992px and up) */
@@ -299,5 +358,16 @@ footer {
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
     }
+}
+/* Gallery: Media query: Extra large devices (1200px and up) */
+@media screen and (min-width: 1200px) {
+    #photos {
+        column-count: 4;
+        column-gap: 0;
+
+}
+}
+
+}
 }
 }
