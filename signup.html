@@ -16,7 +16,7 @@
     <!-- Title -->
     <title>Restaurants Hub</title>
     <!-- favicon -->
-     <link rel="icon" type="image/x-icon" href="assets/css/image/favicon/cup.png"/>
+     <link rel="icon" type="image/x-icon" href="assets/css/images/favicon/cup.png"/>
 
     <!-- Bootstrap CSS Link -->
     <link
@@ -33,8 +33,9 @@
     <!-- Header Section -->
     <header>
       <a href="index.html">
-        <h1 id="logo">Restaurant Hub</h1>
-      </a>
+      <h1 id="logo">Restaurants Hub</h1>
+      
+    </a>
       <input type="checkbox" id="nav-toggle" name="nav-toggle" />
       <label for="nav-toggle" class="nav-toggle-label"
         ><i class="fa-solid fa-bars"></i
@@ -51,21 +52,33 @@
     </header>
     <!-- Main Content -->
     <main>
-      <section id="sign up">
-        <div class="container">
-          <div class="info">   
-            <h1>Sign Up Here</h1>
-            <h2>Create your account</h2>
-            <p>Join us and start ordering your favorite meals</p>
-            <img src='./images/burger.webp' alt="" />
-
-          </div>   
+      <section id="signup">
+        <form id="signup-form" method="post" action="https://formdump.codeinstitute.net">
+          <div>Let's get you signed up!</div>
+         
+          <label for="first-name">First Name</label>
+<input type="text" name="first_name" id="first-name" class="text-input" required>
+<i class="fas fa-user"></i>
+<br>
+<label for="last-name">Last Name</label>
+<input type="text" name="last_name" id="last-name" class="text-input" required>
+<i class="fas fa-user"></i>
+<br>
+<label for="email-address">Email Address</label>
+<input type="email" name="email_address" id="email-address" class="text-input" required>
+  <i class="fas fa-envelope"></i> 
+<br>
+<label for="password">Password</label>
+<input type="password" name="password" id="password" class="text-input" required>
+<i class="fas fa-lock"></i>
+<br>
+<button type="submit" class="join-button">Submit</button>
+<div class="info">
+  <h2>By signing up, you agree to our <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a></h2>
+</div>
           
-        </div>
-
-      </section>
-      
-      
+        </form>        
+      </section>    
     </main>
     <!-- Bootstrap JS script goes at the bottom of the body element -->
     <!--Bootstrap JS Script-->
