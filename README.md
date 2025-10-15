@@ -1,8 +1,9 @@
-# restaurant-hub-ms1
-milestone one project
+# milestone one project
 
-Restaurant hub is a website here customers can order meals from different restaurants. 
-It should have the ability for home delivery or pick up bu customers. 
+# Restaurants Hub | The Spoon
+  
+Restaurant hub | The Spoon is a go to plateform for the public to place meal orders from variety of restaurant brands all over the UK. 
+Designed with simplicity in order to offers a browsing experience, allowing to place food effortlessly and gets it delivered to thier door steps. It also have the ability for collection. Start your food delivery or collection order today from THE SPOON.
 
 
 
