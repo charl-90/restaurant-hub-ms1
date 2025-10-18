@@ -80,10 +80,11 @@ h3:hover {
 
 p {
   font-family: "Oswald", sans-serif;
-  text-transform: lowercase;
+  text-transform: uppercase;
   letter-spacing: 2px;
   color: blue;
   text-align: center;
+  text-align: left;
 }
 
 
@@ -162,6 +163,7 @@ main {
 
 }
 
+  
 html {
   font-family: 'Lato', sans-serif;
   font-size: 18px;
