@@ -16,10 +16,18 @@ body {
   flex-direction: column;
   /* Generic project styles */
   color: black;
-  font-family: 'lato', sans-serif;
-
+  font-family: "lato", sans-serif;
+  overflow: auto;
 }
 
+/* For scroll bars - General */
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: plum lightgray;
+  min-height: 100%; /* Allow page to grow */
+  overflow-y: auto; /* Enable vertical scroll */
+}
 
 /* Header */
 header {
@@ -44,17 +52,19 @@ h1 {
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: white;
+  color: black;
   text-align: center;
-  
+  position: relative;
+  font-size: 100%;
 }
 
 h2 {
-  font-size: 130%;
+  font-size: 110%;
   letter-spacing: 2px;
-  color: white;
-  text-align: center
-  
+  color: black;
+  background-color: white;
+  padding: 10px 1rem;
+  text-align: center;
 }
 h2:hover {
   color: blue;
@@ -69,8 +79,6 @@ h3 {
   text-align: center;
   padding-top: 0%;
   justify-content: center;
-
-  
 }
 h3:hover {
   color: blue;
@@ -86,8 +94,6 @@ p {
   text-align: center;
   text-align: left;
 }
-
-
 
 #menu li {
   margin-bottom: 1em;
@@ -111,7 +117,7 @@ nav {
 }
 
 /* Nav toggle*/
-#nav-toggle:checked~nav {
+#nav-toggle:checked ~ nav {
   display: block;
 }
 
@@ -127,7 +133,6 @@ nav {
 
 /* Main Content */
 main {
-
   /* Make main elemant take up any surplus space to push footer down*/
   flex: 1 0 auto;
   margin-top: 60px;
@@ -135,37 +140,32 @@ main {
   overflow: hidden;
   background-color: white;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
- text-align:center;
-
-
+  text-align: center;
 }
 
 .no-bullets {
   list-style-type: none;
-  
 }
 
 /* Hero section */
 #hero {
   width: 110%;
-  height: 998px;
-  background: url('./images/burger1.webp') no-repeat center center/cover;
-  color: black;
-  position: absolute;
+  height: 750px;
+  background: url("./images/burger1.webp") no-repeat center center/cover;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: left;
-  margin-left: -5%;
+  margin-left: -10%;
   margin-top: -20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
- 
-
+  max-height: 10000px; /* Limit height */
+  overflow-y: auto; /* Scroll inside */
 }
 
-  
 html {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
 }
 
@@ -175,7 +175,6 @@ html {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
-
   align-items: center;
   justify-content: center;
 }
@@ -185,30 +184,17 @@ html {
   top: 50%;
   right: 20px;
   transform: translateY(-50%);
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   max-width: 90%;
 }
-back-video {
-  position: fixed;
- 
-  z-index: -1;
-  
-   
-}
-
-
-
-
 
 /*--- form ---*/
 form {
   background: linear-gradient(#f8f8f8, #e8e8e8);
-  position: absolute;
-  top: 50%;
-  left: 50%;
+
   transform: translate(-50%, -50%);
   padding: 2rem;
   border: 1px solid #ddd;
@@ -221,6 +207,8 @@ form {
   padding: 25px 25px 10px 25px;
   box-shadow: 0px 5px 20px 10px rgba(0, 0, 0, 0.1);
 
+  max-height: 10000px; /* Limit height */
+  overflow-y: auto; /* Scroll inside */
 }
 
 form header {
@@ -240,7 +228,6 @@ form fieldset {
   margin: 0;
   padding: 0;
 }
-
 
 form i:hover {
   color: white;
@@ -302,14 +289,15 @@ form .join-button:hover {
 }
 
 form .info {
-  font-size: 90%;
+  font-size: 80%;
   text-align: center;
-  margin-top: 1rem;
+  margin-top: -5rem;
   color: black;
 }
 
 form .info a {
-  color: plum;
+  color: blueviolet;
+  font-size: 80%;
   text-decoration: none;
 }
 
@@ -318,9 +306,9 @@ form .info a:hover {
 }
 
 form i {
-  margin-left: -30px;
+  margin-left: -10px;
   color: #3a3a3a;
-  position: absolute;
+
   top: -30px;
   left: 10px;
 }
@@ -334,7 +322,6 @@ form i {
 #photos img {
   width: 100%;
   line-height: 1em;
-
 }
 
 #photos {
@@ -355,7 +342,6 @@ form i {
   font-size: 160%;
   padding: 5%;
   color: #3a3a3a;
-
 }
 
 #social-networks i:hover {
@@ -380,11 +366,8 @@ footer {
     column-gap: 0;
   }
 
-
-
   /* Media query: Tablet and larger (768px and up) */
   @media screen and (min-width: 768px) {
-
     /* Header */
     nav {
       display: block;
@@ -392,12 +375,10 @@ footer {
       box-shadow: none;
       width: fit-content;
       padding-right: 1rem;
-
     }
 
     #menu {
       display: flex;
-
     }
 
     #menu li {
@@ -421,16 +402,45 @@ footer {
     }
 
     /*-- Hero --  */
+    #hero {
+      height: 800px;
+      width: 110%;
+    }
+
+    #info {
+      width: 500px;
+      margin-left: 50px;
+    }
     #cover-text {
       width: 300px;
       right: 50px;
+    }
+
+    /* Hero Page */
+    #hero {
+      column-count: 2;
+      column-gap: 0;
+    }
+
+    /* Media query: Large devices (Laptops and desktops (992px and up) */
+    @media screen and (min-width: 992px) {
+      #menu a:hover {
+        border-bottom: 1px solid #3a3a3a;
+      }
+    }
+
+    /* Hero Page: Media query: Extra large devices (1200px and up) */
+    @media screen and (min-width: 1200px) {
+      #Hero {
+        column-count: 2;
+        column-gap: 0;
+      }
     }
 
     /* Gallery */
     #photos {
       column-count: 3;
       column-gap: 0;
-
     }
 
     /* Media query: Large devices (Laptops and desktops (992px and up) */
@@ -445,7 +455,6 @@ footer {
       #photos {
         column-count: 4;
         column-gap: 0;
-
       }
     }
 
@@ -454,32 +463,26 @@ footer {
         width: 160%;
         height: auto;
         box-shadow: none;
-      width: fit-content;
-      padding-right: 1rem;
-      left: 0;
+        width: fit-content;
+        padding-right: 1rem;
+        left: 0;
         right: auto;
+      }
 
-        
-      
+      @media (max-width: 1200px) {
+        .back-video {
+          width: auto;
+          height: 160%;
+          box-shadow: none;
+          width: fit-content;
+          padding-right: 1rem;
+          left: auto;
+          right: 0;
+        }
+      }
     }
-
-     @media (max-width: 1200px) {
-      .back-video {
-        width: auto;
-        height: 160%;
-        box-shadow: none;
-      width: fit-content;
-      padding-right: 1rem;
-      left: auto;
-        right: 0;
-
-
-      
-    }
-
   }
 }
-  }}
 /*--- form ---*/
 
 form {
@@ -487,7 +490,7 @@ form {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  /*transform: translate(-50%, -50%); */
   padding: 2rem;
   border: 1px solid #ddd;
   border-radius: 5px;
@@ -498,6 +501,4 @@ form {
   text-align: left;
   padding: 25px 25px 10px 25px;
   box-shadow: 0px 5px 20px 10px rgba(0, 0, 0, 0.1);
-
 }
-  
