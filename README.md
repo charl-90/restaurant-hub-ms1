@@ -96,7 +96,7 @@ Sign uo form should be clear and easy for fill in.
 # Testing
 - Manuel Testing (Test Activities)
 - Test Caese 
-    - Set of test steps,  test conditions, and expected results used to verify that a specific feature of a software application functional specifications are correct and meets the functional requirements. It's a detailed documentation that provides step-by-step instructions for a tester to follow, including prerequisites, input data, and the expected results. The main purpose is to check that the software behaves as expected, uncover defects / bugs, and ensure it performs as intended.
+    - Set of test steps,  test conditions, and expected results used to verify that a specific feature of a software application functional specifications are correct and meets the functional requirements. It's a detailed documentation that provides step-by-step instructions for a tester to follow, including prerequisites, input data, and the expected results. The main purpose is to check that the software behaves as expected, uncover defects / bugs, and ensure it performs as intended. Test Cases also provides the ability to ensure that the final products meets the functional requirements, user accessibility, userbility and responsiveness accross multiple platforms. 
 
      # Test Case ID181025:
      - Test to validate that new users are able to resgister and submit a form.
@@ -136,6 +136,23 @@ Sign uo form should be clear and easy for fill in.
  |Go to url : https://charl-90.github.io/restaurant-hub-ms1/index.html   |Website opens|
  |Click on the Home Page Link | Homw Page Pages
  |Visually verify that the gallery page image displays correclly| Images are clearly displayed
+
+# Validators 
+
+The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
+
+- W3C Markup Validator   https://jigsaw.w3.org/css-validator/ - Results
+
+![alt text](assets/css/images/jigsawvalidator.png)
+
+- W3C CSS Validator  https://validator.w3.org/ - Results
+
+# Lighthouse Testing 
+- https://pagespeed.web.dev/
+- Mobile 
+- Desktop
+
+
   
      
 
@@ -145,16 +162,44 @@ Sign uo form should be clear and easy for fill in.
 # Test Artifacts
 - Test Report
 
+# Deployment
+- GitHub Pages
+The project was deployed to GitHub Pages using the following steps...
 
-**Wireframe Desktop**
-![alt text](signUp.PNG)
+Log in to GitHub and locate the GitHub Repository
+At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
+Alternatively Click Here for a GIF demonstrating the process starting from Step 2.
+Scroll down the Settings page until you locate the "GitHub Pages" Section.
+Under "Source", click the dropdown called "None" and select "Master Branch".
+The page will automatically refresh.
+Scroll back down through the page to locate the now published site link in the "GitHub Pages" section.
 
-![alt text](orderPage.PNG)
+# Forking the GitHub Repository
+By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
 
-![alt text](restaurantHunPage.PNG)
+Log in to GitHub and locate the GitHub Repository
+At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
+You should now have a copy of the original repository in your GitHub account.
 
-**Wireframe Mobile**
-![alt text](mobileSignUp.PNG)
+# Making a Local Clone
+Log in to GitHub and locate the GitHub Repository
+Under the repository name, click "Clone or download".
+To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
+Open Git Bash
+Change the current working directory to the location where you want the cloned directory to be made.
+Type git clone, and then paste the URL you copied in Step 3.
+$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+
+Press Enter. Your local clone will be created.
+
+$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+- Cloning into `CI-Clone`...
+- remote: Counting objects: 10, done.
+- remote: Compressing objects: 100% (8/8), done.
+- remove: Total 10 (delta 1), reused 10 (delta 1)
+- Unpacking objects: 100% (10/10), done.
+
+
 
 
 **Libaries**
