@@ -143,9 +143,10 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 - W3C Markup Validator   https://jigsaw.w3.org/css-validator/ - Results
 
-![alt text](assets/css/images/jigsawvalidator.png)
+![alt text](assets/css/images/markupvalidator.png)
 
 - W3C CSS Validator  https://validator.w3.org/ - Results
+![alt text](assets/css/images/jigsawvalidator.png)
 
 # Lighthouse Testing 
 - https://pagespeed.web.dev/
