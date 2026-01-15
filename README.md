@@ -150,7 +150,11 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 # Lighthouse Testing 
 - https://pagespeed.web.dev/
 - Mobile 
+![alt text](assets/css/images/lighthousetestingmobil.png)
+
 - Desktop
+![alt text](assets/css/images/lighthousetestingdesktop.png)
+
 
 
   
