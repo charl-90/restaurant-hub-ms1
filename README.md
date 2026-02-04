@@ -121,6 +121,8 @@ As a user visiting the Restaurant hub website. I will like the ability to be abl
 * Then I should get the food delivered to my doorstep.
 
 ![alt text](assets/css/images/homepage.png)
+ 
+
 
 * Given I am a new user, I will want to place an order for collection.
 * When I order food from any restaurant of my choice
