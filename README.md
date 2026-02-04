@@ -75,6 +75,7 @@ As a user visiting the Restaurant hub website. I will like the ability to be abl
 
 # Landing Page
 This page will provide a welcoming feel to the user with available links of where to go.
+
 ![alt text](assets/css/images/homepage.png)
 
 # Gallery
@@ -86,6 +87,7 @@ User should be able to see some of the amazing and delicious meals available
 # Sign Up
 User should be able to register when they first visit the website.
 Sign uo form should be clear and easy for fill in.
+
 ![alt text](assets/css/images/signup.png)
 
 # Technologies Used
